@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web bằng HTML5 Semantics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Khung bao bọc toàn bộ trang web -->
+    <div class="layout-container">
+
+        <!-- 1. HEADER: Đầu trang, chứa logo và banner -->
+        <header class="site-header">
+            <h1>HTML5 Semantic Layout</h1>
+            <p>Xây dựng cấu trúc trang web chuẩn ngữ nghĩa hiện đại</p>
+        </header>
+
+        <!-- 2. NAV: Thanh điều hướng trang web -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#news">Tin tức</a></li>
+                <li><a href="#courses">Khóa học</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <!-- KHU VỰC THÂN TRANG: Kết hợp Section và Aside -->
+        <div class="main-body">
+
+            <!-- 3. SECTION: Khu vực nội dung chính -->
+            <section class="content-section">
+                <!-- 4. ARTICLE: Các bài viết độc lập -->
+                <article class="post">
+                    <h2>Tại sao nên sử dụng các thẻ HTML5 Semantics?</h2>
+                    <p class="post-meta">Đăng ngày: 13/10/2026 | Tác giả: CodeGym</p>
+                    <p>
+                        Các thẻ ngữ nghĩa như <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code> giúp công cụ tìm kiếm (SEO) và các trình đọc màn hình dễ dàng phân tích và hiểu rõ cấu trúc nội dung của trang web hơn so với việc chỉ lạm dụng thẻ <code>&lt;div&gt;</code> thông thường.
+                    </p>
+                </article>
+
+                <article class="post">
+                    <h2>Kỹ thuật dàn trang kết hợp Flexbox và HTML5</h2>
+                    <p class="post-meta">Đăng ngày: 12/10/2026 | Tác giả: Giảng viên</p>
+                    <p>
+                        Sử dụng CSS Flexbox cùng với các thẻ HTML5 giúp bố cục co giãn linh hoạt, dễ dàng quản lý khoảng cách bằng thuộc tính <code>gap</code> mà không còn phụ thuộc vào các kỹ thuật <code>float</code> hay <code>clear</code> truyền thống.
+                    </p>
+                </article>
+            </section>
+
+            <!-- 5. ASIDE: Cột phụ bên cạnh (Sidebar) -->
+            <aside class="sidebar">
+                <div class="widget">
+                    <h3>Chủ đề nổi bật</h3>
+                    <ul>
+                        <li><a href="#">Lập trình Web Front-end</a></li>
+                        <li><a href="#">Cấu trúc dữ liệu & Giải thuật</a></li>
+                        <li><a href="#">Responsive Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Thông báo</h3>
+                    <p>Lịch bảo trì hệ thống định kỳ sẽ diễn ra vào cuối tuần này.</p>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- 6. FOOTER: Chân trang, thông tin bản quyền -->
+        <footer class="site-footer">
+            <p>&copy; 2026 Bản quyền thuộc về CodeGym. Thiết kế chuẩn HTML5 & CSS.</p>
+            <p>Hỗ trợ học viên: support@codegym.vn</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
